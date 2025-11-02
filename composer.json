@@ -1,0 +1,42 @@
+{
+  "name": "maksym/db-lib",
+  "type": "library",
+  "description": "db-package for small framework",
+  "keywords": [
+    "db",
+    "mysql",
+    "pgsql",
+    "sqlite",
+    "mssql"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maksym Haivoronskyi",
+      "email": "maksym.haivoronskyi@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "ext-pdo": "*",
+    "ext-mbstring": "*",
+    "maksym/config-lib": ">=1.0",
+    "maksym/log-lib": ">=1.0",
+    "maksym/helper-functions": ">=1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "Maksym\\Db\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
